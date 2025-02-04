@@ -94,17 +94,4 @@ router.put("/update-status/:id", authenticateToken, async(req, res)=>{
     }
 });
 
-// router.get("/get-all-orders", authenticateToken, async(req, res) => {
-//     try{
-//         const {id} = req.params;
-//         await order.findByIdAndUpdate(id, {status : req.body.status});
-//         return res.json({
-//             status : "Success",
-//             message : "Status Updated Successfully"
-//         })
-//     }catch(err){
-//         res.status(500).json({message : "Internal server error"});
-//     }
-// });
-
 module.exports = router;
